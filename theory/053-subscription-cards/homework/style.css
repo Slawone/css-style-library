@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.section__title {
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 500;
+  color: #0b132a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section__subtitle {
+  line-height: 30px;
+  color: #4f5665;
+  text-align: center;
+  margin-inline: auto;
+  margin-bottom: 60px;
+  max-width: 555px;
+}
+
+.card-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1023px) {
+  .card-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.card {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 50px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all .3s ease-in;
+}
+
+.card:hover {
+  border-color: #F53838;
+  transform: scale(1.1);
+}
+
+.card__header {
+  margin-bottom: 50px;
+}
+
+.card__image {
+  width: 144px;
+  height: 165px;
+  margin-bottom: 30px;
+}
+
+.card__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #0b132a;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* .card__list {
+} */
+
+.card__item {
+  font-size: 14px;
+  line-height: 30px;
+  color: #4f5665;
+  position: relative;
+}
+
+.card__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.card__item::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-image: url('./img/check.svg');
+  position: absolute;
+  left: -40px;
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+/* .card__footer {
+} */
+
+.card__price {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #0b132a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card__btn {
+  font-weight: 700;
+  color: #F53838;
+  border: 2px solid #F53838;
+  border-radius: 50px;
+  padding: 13px 63px;
+  transition: all .3s ease-in;
+}
+
+.card__btn:hover {
+  background-color: #F53838;
+  color: #fff;
+}
